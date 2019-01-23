@@ -33,7 +33,20 @@
   display: block;
 }
 
-cat { font-size: 200%;
-      font-style: oblique;
-      font-family: cursive;
-  }
+.hobbies  {
+  font-size: 175%;
+        font-style: oblique;
+        font-family: cursive;
+
+}
+
+.animals  {
+  font-size: 200%;
+        font-style: oblique;
+        font-family: monospace;
+        text-transform: full-width;
+        text-emphasis-color: Progressive;
+        animation-name: none;
+        align-items: stretch;
+
+}
