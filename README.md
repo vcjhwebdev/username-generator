@@ -4,9 +4,9 @@ APP DESCRIPTION HERE
 
 ## Authors
 
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
+- [Michael Armeniakos](http://link-to-website-here/)
+- [William Roeschlein](http://link-to-website-here/)
+- [Jake Garlic](http://link-to-website-here/)
 
 ## Features
 
