@@ -1,6 +1,6 @@
 /* CSS Document */
 
-body  {
+.body  {
   background-color: #e5e7ea;
   margin: 1px;
   height:80vh;
@@ -32,3 +32,8 @@ body  {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+cat { font-size: 200%;
+      font-style: oblique;
+      font-family: cursive;
+  }
