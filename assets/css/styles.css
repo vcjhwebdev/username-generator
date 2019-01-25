@@ -1,20 +1,35 @@
 /* CSS Document */
 
-.body  {
+body  {
   background-color: #e5e7ea;
-  margin: 1px;
-  height:80vh;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
-
 }
 
 * {
 	box-sizing: border-box;
 }
 
-.dropdown {
+form{
+  text-align: center;
+
+}
+
+select{
+  width: 100%;
+  font-size: 150%;
+  text-align: center;
+
+
+}
+
+label {
+  display: block;
+  font-size:500%
+}
+
+/* .dropdown {
   position: relative;
   display: inline-block;
 }
@@ -49,4 +64,4 @@
         animation-name: none;
         align-items: stretch;
 
-}
+} */
