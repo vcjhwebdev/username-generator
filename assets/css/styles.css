@@ -17,19 +17,24 @@ form{
 }
 
 select{
-  width: 100%;
-  font-size: 150%;
+  width:40%;
+  height: 75%;
+  font-size: 32px;
   text-align: center;
-
 
 }
 
 label {
   display: block;
-  font-size:500%
-  
-}
+  font-size: 72px;
 
+}
+.btn-generate {
+  width: 60%;
+  height: 100%;
+   font-size: 58px;
+
+ }
 /* .dropdown {
   position: relative;
   display: inline-block;
@@ -50,7 +55,7 @@ label {
 }
 
 .hobbies  {
-  font-size: 175%;
+  font-size: 200%;
         font-style: oblique;
         font-family: cursive;
 
@@ -63,6 +68,7 @@ label {
         text-transform: full-width;
         text-emphasis-color: Progressive;
         animation-name: none;
+
         align-items: stretch;
 
-} */
+} /*
