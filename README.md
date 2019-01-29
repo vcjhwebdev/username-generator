@@ -1,4 +1,3 @@
-# APP NAME HERE
 username generator
 APP DESCRIPTION HERE
 this app will give you the ability to chose your username based off of what you enjoy doing!
@@ -6,7 +5,7 @@ this app will give you the ability to chose your username based off of what you 
 
 - [Michael Armeniakos](http://link-to-website-here/)
 - [William Roeschlein](http://link-to-website-here/)
-- [Jake Garlic](http://link-to-website-here/)
+- [Jake Garlick](http://link-to-website-here/)
 
 ## Features
 
@@ -16,4 +15,4 @@ this app will give you the ability to chose your username based off of what you 
 
 **Version 0.1**
 
-- CHANGES HERE
+-added 3 box
