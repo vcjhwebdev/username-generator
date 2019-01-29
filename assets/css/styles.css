@@ -21,6 +21,7 @@ select{
   height: 75%;
   font-size: 32px;
   text-align: center;
+  outline-style: groove;
 
 }
 
@@ -30,9 +31,13 @@ label {
 
 }
 .btn-generate {
-  width: 60%;
-  height: 100%;
-   font-size: 58px;
+  background-color:;
+  outline-color: #FF0000;
+  outline-width: thick;
+  outline-style: groove;
+  width: 30%;
+  height: 120%;
+  font-size: 40px;
 
  }
 /* .dropdown {
