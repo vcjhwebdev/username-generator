@@ -1,4 +1,4 @@
-function myFunction() {
+  function myFunction() {
     var x = document.getElementById("animalSelect").selectedIndex;
       document.write(document.getElementsByTagName("option")[x].value);
 
@@ -13,7 +13,7 @@ function myFunction() {
 
 
 
-  document.write(x + y + z)
+
 
 /*
 
