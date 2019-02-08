@@ -7,9 +7,7 @@
 
     function shuffleWords(words) {
       // randomize array
-      (animalSelect)
-      (hobbySelect)
-      (numberSelect)
+
       return words.join();
     }
 
@@ -17,7 +15,7 @@
     var animal = document.getElementsByTagName("option")[x].value;
 
 
-    var y = document.getElementById("hobbySelect").selectedIndex;
+    var y = document.getElementById("hobbieSelect").selectedIndex;
     var hobby = document.getElementsByTagName("option")[y].value;
 
 
