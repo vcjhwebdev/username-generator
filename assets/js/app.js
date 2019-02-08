@@ -5,13 +5,7 @@
 
   function myFunction() {
 
-    function shuffleWords(words) {
-      // randomize array
-      (animalSelect)
-      (hobbySelect)
-      (numberSelect)
-      return words.join();
-    }
+
 
     var x = document.getElementById("animalSelect").selectedIndex;
     var animal = document.getElementsByTagName("option")[x].value;
@@ -30,8 +24,17 @@
     words.push(animal);
     words.push(hobby);
     words.push(number);
+    return words.join();
 
     var result = shuffleWords(words);
+
+
+
+    output.textContent = result;
+    console.log(words);
+    }
+
+
 
     //  var result = Math.random();
     // if(result < 0.33)  {
@@ -43,13 +46,6 @@
     // else if (result > 0.66) {
     //   result = ("Your username is" + number + hobby + animal);
     // }
-
-    output.textContent = result;
-    }
-
-
-
-
 
 /*
 
