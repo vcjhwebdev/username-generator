@@ -17,12 +17,11 @@ form{
 }
 
 select{
-  width:30%;
-  height: 75%;
-  font-size: 32px;
+  font-size: 20px;
   text-align: center;
   outline-style: groove;
-
+  display: inline-block;
+  width: 20%
 }
 
 label {
@@ -40,40 +39,40 @@ label {
   font-size: 40px;
 
  }
-/* .dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
+ .output {
+   background-color:;
+   outline-color: #FF0000;
+   outline-width: thick;
+   outline-style: groove;
+   width: 30%;
+   height: 120px
+  
+
+
+
+ }
+
+ /* #animalSelect {
+   left:10%;
+   position: absolute;
+   width: 10%;
+   height: 15%;
+   top: 50%;
+ }
+
+#hobbySelect {
+  left: 40%
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  width: 10%;
+  height: 15%;
+  top: 50%;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.hobbies  {
-  font-size: 200%;
-        font-style: oblique;
-        font-family: cursive;
-
-}
-
-.animals  {
-  font-size: 200%;
-        font-style: oblique;
-        font-family: monospace;
-        text-transform: full-width;
-        text-emphasis-color: Progressive;
-        animation-name: none;
-
-        align-items: stretch;
-
+#numberSelect {
+  right:10%;
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  top: 50%;
 } /*
