@@ -1,14 +1,13 @@
 //["cat", "soccer", "2"];
 // "catsoccer2"
+var form = document.getElementById('usernameForm');
 
+form.addEventListener("submit", function(event){
+  event.preventDefault();
+});
 
 
   function myFunction() {
-
-    var form = document.getElementById("form").addEventListener("submit", function(event){
-      event.preventDefault()
-    });
-
 
     var x = document.getElementById("animalSelect").selectedIndex;
     var animal = document.getElementsByTagName("option")[x].value;
@@ -34,7 +33,7 @@
 
 
     output.textContent = result;
-    console.log(words);
+    console.log(result);
     }
 
 
