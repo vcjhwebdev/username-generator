@@ -1,0 +1,78 @@
+/* CSS Document */
+
+body  {
+  background-color: #e5e7ea;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+form{
+  text-align: center;
+
+}
+
+select{
+  font-size: 20px;
+  text-align: center;
+  outline-style: groove;
+  display: inline-block;
+  width: 20%
+}
+
+label {
+  display: block;
+  font-size: 72px;
+
+}
+.btn-generate {
+  background-color:;
+  outline-color: #FF0000;
+  outline-width: thick;
+  outline-style: groove;
+  width: 25%;
+  height: 120%;
+  font-size: 40px;
+
+ }
+
+ .output {
+   background-color:;
+   outline-color: #7A19B2;
+   outline-style: groove;
+   width: 30%;
+   height: 120px;
+   font-size: 40px;
+
+
+
+
+ }
+
+ /* #animalSelect {
+   left:10%;
+   position: absolute;
+   width: 10%;
+   height: 15%;
+   top: 50%;
+ }
+
+#hobbySelect {
+  left: 40%
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  top: 50%;
+}
+
+#numberSelect {
+  right:10%;
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  top: 50%;
+} /*

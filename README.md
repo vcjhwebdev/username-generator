@@ -1,19 +1,20 @@
-# APP NAME HERE
-
+username generator
 APP DESCRIPTION HERE
-
+this app will give you the ability to chose your username based off of what you enjoy doing!
 ## Authors
 
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
+- [Michael Armeniakos](http://link-to-website-here/)
+- [William Roeschlein](http://link-to-website-here/)
+- [Jake Garlick](http://link-to-website-here/)
 
 ## Features
 
-- APP FEATURES HERE
+- generator that generates a username
 
 ### Changelog
 
 **Version 0.1**
 
-- CHANGES HERE
+-added 3 boxes
+
+-added generate button
