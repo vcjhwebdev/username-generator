@@ -1,17 +1,17 @@
-//["cat", "soccer", "2"];
-// "catsoccer2"
 var form = document.getElementById('usernameForm');
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
-  var x = document.getElementById("animalSelect").selectedIndex;
-  var animal = document.getElementsByTagName("option")[x].value;
+  // var x = document.getElementById("animalSelect").selectedIndex;
+  var animal = document.getElementById("animalSelect").value;
 
-  var y = document.getElementById("hobbySelect").selectedIndex;
-  var hobby = document.getElementsByTagName("option")[y].value;
+  // var y = document.getElementById("hobbySelect").selectedIndex;
+  var hobby = document.getElementById("hobbySelect").value;
 
-  var z = document.getElementById("numberSelect").selectedIndex;
-  var number = document.getElementsByTagName("option")[z].value;
+  // var z = document.getElementById("numberSelect").selectedIndex;
+  var number = document.getElementById("numberSelect").value;
+
+  //console.log(animal,hobby,number);
 
   var output = document.querySelector('.output');
 
@@ -22,7 +22,7 @@ form.addEventListener("submit", function(event){
 
   var shuffled = shuffleArray(words);
 
-  var username = shuffled.join();
+  var username = shuffled.join('');
 
   output.textContent = username;
 });
