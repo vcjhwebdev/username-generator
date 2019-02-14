@@ -1,7 +1,7 @@
 /* CSS Document */
 
 body  {
-  background-color: #e5e7ea;
+  background-color: #FFFF00;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -28,6 +28,7 @@ label {
   display: block;
   font-size: 72px;
 
+
 }
 .btn-generate {
   background-color:;
@@ -44,16 +45,17 @@ label {
    background-color:;
    outline-color: #7A19B2;
    outline-style: groove;
-   width: 30%;
+   width: 40%;
    height: 120px;
    font-size: 40px;
+   filter:blur();
 
 
 
-
+/*
  }
 
- /* #animalSelect {
+  #animalSelect {
    left:10%;
    position: absolute;
    width: 10%;
@@ -75,4 +77,5 @@ label {
   width: 10%;
   height: 15%;
   top: 50%;
-} /*
+}
+*/
