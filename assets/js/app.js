@@ -33,8 +33,8 @@ form.addEventListener("submit", function(event){
 function shuffleArray(array) {
 
 
-  return array;
 }
+
 
     //  var result = Math.random();
     // if(result < 0.33)  {
