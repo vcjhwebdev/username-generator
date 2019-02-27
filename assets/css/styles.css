@@ -42,13 +42,13 @@ form{
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 60%
+  height: 70%
 }
 /* flexbox children */
 form > * {
 }
 select{
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   outline-style: groove;
   outline-color: #171CB2;
@@ -63,7 +63,7 @@ label {
   font-family: 'Cardo';
 }
 .btn-generate {
-  outline-color: #FFFF00;
+  outline-color: #FF2724;
   outline-width: thick;
   outline-style: groove;
   width: 250px ;
