@@ -15,7 +15,7 @@ form{
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 50%
+  height: 55%
 }
 /* flexbox children */
 form > * {
@@ -40,6 +40,8 @@ label {
   width: 250px ;
   height: 120;
   font-size: 40px;
+  margin: auto;
+  padding: 10px;
  }
  .output {
    outline-color: #7A19B2;
