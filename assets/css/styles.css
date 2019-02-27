@@ -1,5 +1,31 @@
 /* CSS Document */
+/* =================================
+DEFAULT STYLES (NO MEDIA QUERY)
+Device width:
+    320px -->   <-- 768px
+==================================== */
 
+/* =================================
+Device width:
+    <-- 320px
+==================================== */
+@media (max-width: 320px) {
+form{
+  height: 70%;
+}
+}
+/* =================================
+Device width:
+    768px -->   <-- 1024px
+==================================== */
+@media (min-width: 768px) {
+}
+/* =================================
+Device width:
+    1024px -->
+==================================== */
+@media (min-width: 1024px) {
+}
 body  {
   height: 100vh;
   background-color: #00e1ff;
@@ -15,11 +41,10 @@ form{
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 55%
+  height: 60%
 }
 /* flexbox children */
 form > * {
-
 }
 select{
   font-size: 20px;
@@ -27,7 +52,9 @@ select{
   outline-style: groove;
   outline-color: #7A19B2;
   display: inline-block;
-  width:
+  margin: auto;
+  padding: 10px;
+
 }
 label {
   display: block;
@@ -53,32 +80,3 @@ label {
    margin: auto;
    padding: 10px;
  }
-
-
-/*
- }
-
-  #animalSelect {
-   left:10%;
-   position: absolute;
-   width: 10%;
-   height: 15%;
-   top: 50%;
- }
-
-#hobbySelect {
-  left: 40%
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  top: 50%;
-}
-
-#numberSelect {
-  right:10%;
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  top: 50%;
-}
-*/
