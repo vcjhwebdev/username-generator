@@ -45,6 +45,15 @@ return array;
 }
 
 
+var winGoogle = window.open('http://google.com', '_blank');
+var winBing = window.open('http://bing.com', '_blank');
+var winYahoo = window.open('http://yahoo.com', '_blank');
+
+//close the windows
+winGoogle.close();
+winBing.close();
+winYahoo.close();
+
     //  var result = Math.random();
     // if(result < 0.33)  {
     //     result = ("Your username is" + animal + hobby + number);
