@@ -1,4 +1,5 @@
 /* CSS Document */
+ background-color: FFFFFF;
 /* =================================
 DEFAULT STYLES (NO MEDIA QUERY)
 Device width:
@@ -50,7 +51,7 @@ select{
   font-size: 20px;
   text-align: center;
   outline-style: groove;
-  outline-color: #7A19B2;
+  outline-color: #171CB2;
   display: inline-block;
   margin: auto;
   padding: 10px;
@@ -58,10 +59,11 @@ select{
 }
 label {
   display: block;
-  font-size: 79px;
+  font-size: 80px;
+  font-family: 'Cardo';
 }
 .btn-generate {
-  outline-color: #FF0000;
+  outline-color: #FFFF00;
   outline-width: thick;
   outline-style: groove;
   width: 250px ;
@@ -71,7 +73,7 @@ label {
   padding: 10px;
  }
  .output {
-   outline-color: #7A19B2;
+   outline-color: #35FF04;
    outline-style: groove;
    outline-width: thick;
    width: 300px ;
@@ -79,24 +81,14 @@ label {
    font-size: 40px;
    margin: auto;
    padding: 10px;
- }
- @import url(https://fonts.googleapis.com/css?family=Pacifico);
- @import url('https://fonts.googleapis.com/css?family=Anton');
 
- h1,h2{
-   text-align:center;
  }
 
- h1{
-   color:rgba(100, 50, 255, .8);
-   font-family: 'Pacifico', cursive;
-   color:#212121;
- }
-
+@import url('https://fonts.googleapis.com/css?family=Cardo');
  .rainbow {
 
     /* Font options */
-   font-family: 'Pacifico', cursive;
+   font-family: 'Cardo';
    text-shadow: 2px 2px 4px #000000;
    font-size:40px;
 
@@ -155,12 +147,9 @@ label {
  	100%{color: orange;}
  }
 
- body{
-   background-color:#607D8B;
- }
 
  .container{
-   background-color:#E0F2F1;
+   background-color:#FFFFFF;
    padding:10px;
    border-radius:15px;
    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
