@@ -1,31 +1,12 @@
 /* CSS Document */
- background-color: FFFFFF;
+ /* background-color: FFFFFF; */
 /* =================================
 DEFAULT STYLES (NO MEDIA QUERY)
 Device width:
     320px -->   <-- 768px
 ==================================== */
-
-/* =================================
-Device width:
-    <-- 320px
-==================================== */
-@media (max-width: 320px) {
-form{
-  height: 70%;
-}
-}
-/* =================================
-Device width:
-    768px -->   <-- 1024px
-==================================== */
-@media (min-width: 768px) {
-}
-/* =================================
-Device width:
-    1024px -->
-==================================== */
-@media (min-width: 1024px) {
+* {
+	box-sizing: border-box;
 }
 body  {
   height: 100vh;
@@ -34,15 +15,11 @@ body  {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
-* {
-	box-sizing: border-box;
-}
 /* flexbox container */
 form{
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 70%
 }
 /* flexbox children */
 form > * {
@@ -50,37 +27,44 @@ form > * {
 select{
   font-size: 25px;
   text-align: center;
-  outline-style: groove;
-  outline-color: #171CB2;
+  border-style: groove;
+  border-color: #000000;
   display: inline-block;
   margin: auto;
   padding: 10px;
-
+  border-width: 6px;
+  box-shadow: 2px 20px 15px 0px rgba(0,0,0,0.55);
 }
 label {
   display: block;
   font-size: 80px;
   font-family: 'Cardo';
+  color: #F12312;
+
 }
 .btn-generate {
-  outline-color: #FF2724;
-  outline-width: thick;
-  outline-style: groove;
-  width: 250px ;
+  border-color: #FF2724;
+  border-width: thick;
+  border-style: groove;
+  width: 300px ;
   height: 120;
   font-size: 40px;
   margin: auto;
   padding: 10px;
+  border-width: 8px;
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
  }
  .output {
-   outline-color: #35FF04;
-   outline-style: groove;
-   outline-width: thick;
+   border-color: #FF2724;
+   border-style: groove;
+   border-width: thick;
    width: 300px ;
    height: 120px;
    font-size: 40px;
    margin: auto;
    padding: 10px;
+   border-width: 6px;
+   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
 
  }
 
@@ -117,7 +101,7 @@ label {
  	100%{color: orange;}
  }
 
- /* Internet Explorer */
+ /* Internet Explorer*/
  @-ms-keyframes rainbow{
     0%{color: orange;}
    10%{color: purple;}
@@ -154,3 +138,28 @@ label {
    border-radius:15px;
    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
  }
+
+
+
+
+
+
+/* =================================
+Device width:
+    <-- 320px
+==================================== */
+@media (max-width: 320px) {
+
+}
+/* =================================
+Device width:
+    768px -->   <-- 1024px
+==================================== */
+@media (min-width: 768px) {
+}
+/* =================================
+Device width:
+    1024px -->
+==================================== */
+@media (min-width: 1024px) {
+}
