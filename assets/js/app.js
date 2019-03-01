@@ -1,4 +1,15 @@
-
+function hasLocalStorage() {
+	var testingLS = 'testingLS';
+	try {
+		localStorage.setItem(testingLS, testingLS);
+		localStorage.removeItem(testingLS);
+		return true;
+	}
+	catch (e) {
+		console.log('Sorry, your browser does not support Web Storage...');
+		return false;
+	}
+}
 //Generating username by getting the name
 var form = document.getElementById('usernameForm');
 
