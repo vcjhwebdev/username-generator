@@ -1,3 +1,5 @@
+
+//Generating username by getting the name
 var form = document.getElementById('usernameForm');
 
 form.addEventListener("submit", function(event){
