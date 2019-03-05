@@ -1,3 +1,17 @@
+//Checking for local storage
+function hasLocalStorage() {
+	var testingLS = 'testingLS';
+	try {
+		localStorage.setItem(testingLS, testingLS);
+		localStorage.removeItem(testingLS);
+		return true;
+	}
+	catch (e) {
+		console.log('Sorry, your browser does not support Web Storage...');
+		return false;
+	}
+}
+
 
 //Generating username by getting the name
 var form = document.getElementById('usernameForm');
@@ -24,6 +38,8 @@ form.addEventListener("submit", function(event){
 
   var shuffled = shuffleArray(words);
 
+  var username = shuffled.join('');
+  var username = shuffled.join('');
   var username = shuffled.join('');
 
   output.textContent = username;
