@@ -20,6 +20,10 @@ form{
   text-align: center;
   display: flex;
   flex-direction: column;
+	flex-wrap: wrap;
+}
+fieldset {
+	border: none;
 }
 /* flexbox children */
 form > * {
@@ -37,10 +41,9 @@ select{
 }
 label {
   display: block;
-  font-size: 80px;
+  font-size: 70px;
   font-family: 'Cardo';
   color: #F12312;
-
 }
 .btn-generate {
   border-color: #FF2724;
@@ -48,7 +51,7 @@ label {
   border-style: groove;
   width: 300px ;
   height: 120;
-  font-size: 40px;
+  font-size: 20px;
   margin: auto;
   padding: 10px;
   border-width: 8px;
@@ -58,16 +61,14 @@ label {
    border-color: #FF2724;
    border-style: groove;
    border-width: thick;
-   width: 300px ;
+   width: 100px;
    height: 120px;
-   font-size: 40px;
+   font-size: 23px;
    margin: auto;
    padding: 10px;
    border-width: 6px;
    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-
  }
-
 @import url('https://fonts.googleapis.com/css?family=Cardo');
  .rainbow {
 
@@ -85,7 +86,6 @@ label {
    /* Standar Syntax */
    animation: rainbow 5s infinite;
  }
-
  /* Chrome, Safari, Opera */
  @-webkit-keyframes rainbow{
    0%{color: orange;}
@@ -115,7 +115,6 @@ label {
    90%{color: DodgerBlue;}
  	100%{color: orange;}
  }
-
  /* Standar Syntax */
  @keyframes rainbow{
      0%{color: orange;}
@@ -130,32 +129,161 @@ label {
    90%{color: DodgerBlue;}
  	100%{color: orange;}
  }
-
-
  .container{
    background-color:#FFFFFF;
    padding:10px;
    border-radius:15px;
    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
  }
-
-
-
-
-
-
 /* =================================
 Device width:
     <-- 320px
 ==================================== */
 @media (max-width: 320px) {
-
 }
 /* =================================
 Device width:
     768px -->   <-- 1024px
 ==================================== */
 @media (min-width: 768px) {
+	* {
+		box-sizing: border-box;
+	}
+	body  {
+		height: 100vh;
+		background-color: #00e1ff;
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+	}
+	/* flexbox container */
+	form{
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+	}
+	/* flexbox children */
+	fieldset {
+		flex: 1 0 30%;
+		font-size: 0px;
+	}
+	form button {
+		margin: 16px auto;
+	}
+	select{
+		font-size: 25px;
+		text-align: center;
+		border-style: groove;
+		border-color: #000000;
+		display: inline-block;
+		margin: auto;
+		padding: 10px;
+		border-width: 6px;
+		box-shadow: 2px 20px 15px 0px rgba(0,0,0,0.55);
+	}
+	label {
+		display: block;
+		font-size: 70px;
+		font-family: 'Cardo';
+		color: #F12312;
+
+	}
+	.btn-generate {
+		border-color: #FF2724;
+		border-width: thick;
+		border-style: groove;
+		width: 300px ;
+		height: 120;
+		font-size: 40px;
+		margin: auto;
+		padding: 10px;
+		border-width: 8px;
+		box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	 }
+	 .output {
+		 border-color: #FF2724;
+		 border-style: groove;
+		 border-width: thick;
+		 width: 493px ;
+		 height: 120px;
+		 font-size: 40px;
+		 margin: auto;
+		 padding: 10px;
+		 border-width: 6px;
+		 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+
+	 }
+
+	@import url('https://fonts.googleapis.com/css?family=Cardo');
+	 .rainbow {
+
+			/* Font options */
+		 font-family: 'Cardo';
+		 text-shadow: 2px 2px 4px #000000;
+		 font-size:40px;
+
+			/* Chrome, Safari, Opera */
+		 -webkit-animation: rainbow 5s infinite;
+
+		 /* Internet Explorer */
+		 -ms-animation: rainbow 5s infinite;
+
+		 /* Standar Syntax */
+		 animation: rainbow 5s infinite;
+	 }
+
+	 /* Chrome, Safari, Opera */
+	 @-webkit-keyframes rainbow{
+		 0%{color: orange;}
+		 10%{color: purple;}
+		20%{color: red;}
+		 30%{color: CadetBlue;}
+		40%{color: yellow;}
+		 50%{color: coral;}
+		60%{color: green;}
+		 70%{color: cyan;}
+		 80%{color: DeepPink;}
+		 90%{color: DodgerBlue;}
+		100%{color: orange;}
+	 }
+
+	 /* Internet Explorer*/
+	 @-ms-keyframes rainbow{
+			0%{color: orange;}
+		 10%{color: purple;}
+		20%{color: red;}
+		 30%{color: CadetBlue;}
+		40%{color: yellow;}
+		 50%{color: coral;}
+		60%{color: green;}
+		 70%{color: cyan;}
+		 80%{color: DeepPink;}
+		 90%{color: DodgerBlue;}
+		100%{color: orange;}
+	 }
+
+	 /* Standar Syntax */
+	 @keyframes rainbow{
+			 0%{color: orange;}
+		 10%{color: purple;}
+		20%{color: red;}
+		 30%{color: CadetBlue;}
+		40%{color: yellow;}
+		 50%{color: coral;}
+		60%{color: green;}
+		 70%{color: cyan;}
+		 80%{color: DeepPink;}
+		 90%{color: DodgerBlue;}
+		100%{color: orange;}
+	 }
+
+
+	 .container{
+		 background-color:#FFFFFF;
+		 padding:10px;
+		 border-radius:15px;
+		 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	 }
 }
 /* =================================
 Device width:
@@ -163,3 +291,137 @@ Device width:
 ==================================== */
 @media (min-width: 1024px) {
 }
+body  {
+	height: 100vh;
+	background-color: #00e1ff;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+/* flexbox container */
+form{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+/* flexbox children */
+fieldset {
+	flex: 1 0 20%;
+}
+form button {
+	margin: 16px auto;
+}
+select{
+	font-size: 25px;
+	text-align: center;
+	border-style: groove;
+	border-color: #000000;
+	display: inline-block;
+	margin: auto;
+	padding: 10px;
+	border-width: 6px;
+	box-shadow: 2px 20px 15px 0px rgba(0,0,0,0.55);
+}
+label {
+	display: block;
+	font-size: 70px;
+	font-family: 'Cardo';
+	color: #F12312;
+
+}
+.btn-generate {
+	border-color: #FF2724;
+	border-width: thick;
+	border-style: groove;
+	width: 300px ;
+	height: 120;
+	font-size: 40px;
+	margin: auto;
+	padding: 10px;
+	border-width: 8px;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+ }
+ .output {
+	 border-color: #FF2724;
+	 border-style: groove;
+	 border-width: thick;
+	 width: 493px ;
+	 height: 120px;
+	 font-size: 40px;
+	 margin: auto;
+	 padding: 10px;
+	 border-width: 6px;
+	 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+
+ }
+
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+ .rainbow {
+
+		/* Font options */
+	 font-family: 'Cardo';
+	 text-shadow: 2px 2px 4px #000000;
+	 font-size:40px;
+
+		/* Chrome, Safari, Opera */
+	 -webkit-animation: rainbow 5s infinite;
+
+	 /* Internet Explorer */
+	 -ms-animation: rainbow 5s infinite;
+
+	 /* Standar Syntax */
+	 animation: rainbow 5s infinite;
+ }
+
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+	 0%{color: orange;}
+	 10%{color: purple;}
+	20%{color: red;}
+	 30%{color: CadetBlue;}
+	40%{color: yellow;}
+	 50%{color: coral;}
+	60%{color: green;}
+	 70%{color: cyan;}
+	 80%{color: DeepPink;}
+	 90%{color: DodgerBlue;}
+	100%{color: orange;}
+ }
+
+ /* Internet Explorer*/
+ @-ms-keyframes rainbow{
+		0%{color: orange;}
+	 10%{color: purple;}
+	20%{color: red;}
+	 30%{color: CadetBlue;}
+	40%{color: yellow;}
+	 50%{color: coral;}
+	60%{color: green;}
+	 70%{color: cyan;}
+	 80%{color: DeepPink;}
+	 90%{color: DodgerBlue;}
+	100%{color: orange;}
+ }
+
+ /* Standar Syntax */
+ @keyframes rainbow{
+		 0%{color: orange;}
+	 10%{color: purple;}
+	20%{color: red;}
+	 30%{color: CadetBlue;}
+	40%{color: yellow;}
+	 50%{color: coral;}
+	60%{color: green;}
+	 70%{color: cyan;}
+	 80%{color: DeepPink;}
+	 90%{color: DodgerBlue;}
+	100%{color: orange;}
+ }
+
+
+ .container{
+	 background-color:#FFFFFF;
+	 padding:10px;
+	 border-radius:15px;
+	 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+ }
