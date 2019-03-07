@@ -9,7 +9,6 @@ Device width:
 	box-sizing: border-box;
 }
 body  {
-  height: 100vh;
   background-color: #00e1ff;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -24,6 +23,13 @@ form{
 }
 fieldset {
 	border: none;
+}
+fieldset.generate {
+	flex: 1 0 100%;
+	width: 100%;
+}
+fieldset.generate button {
+	margin: 20px auto;
 }
 /* flexbox children */
 form > * {
@@ -49,8 +55,8 @@ label {
   border-color: #FF2724;
   border-width: thick;
   border-style: groove;
-  width: 300px ;
-  height: 120;
+  width: 300px;
+  height: 100;
   font-size: 20px;
   margin: auto;
   padding: 10px;
