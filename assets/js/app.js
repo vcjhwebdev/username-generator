@@ -19,8 +19,7 @@ var form = document.getElementById('usernameForm');
 form.addEventListener("submit", function(event){
   event.preventDefault();
 
-	form.addEventListener("previous", function(event){
-	  event.preventDefault();
+	
   // var x = document.getElementById("animalSelect").selectedIndex;
   var animal = document.getElementById("animalSelect").value;
 
