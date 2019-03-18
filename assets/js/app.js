@@ -1,16 +1,3 @@
-//Checking for local storage
-function hasLocalStorage() {
-	var testingLS = 'testingLS';
-	try {
-		localStorage.setItem(testingLS, testingLS);
-		localStorage.removeItem(testingLS);
-		return true;
-	}
-	catch (e) {
-		console.log('Sorry, your browser does not support Web Storage...');
-		return false;
-	}
-}
 
 
 //Generating username by getting the name
@@ -64,22 +51,8 @@ function shuffleArray(array) {
 return array;
 }
 
-localStorage.setItem(output);
+function local()	{
+	submit();
 
-    //  var result = Math.random();
-    // if(result < 0.33)  {
-    //     result = ("Your username is" + animal + hobby + number);
-    // }
-    // else if (result > 0.33 && result < 0.66)  {
-    //   result = ("Your username is" + hobby + animal + number);
-    // }
-    // else if (result > 0.66) {
-    //   result = ("Your username is" + number + hobby + animal);
-    // }
-
-/*
-
-function myFunction() {
-  var x = document.getElementById("numberSelect").selectedIndex;
-  alert(document.getElementsByTagName("option")[x].value);
-} */
+}
+  localStorage.setItem(Math.random(), output);
