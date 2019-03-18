@@ -19,7 +19,7 @@ var form = document.getElementById('usernameForm');
 form.addEventListener("submit", function(event){
   event.preventDefault();
 
-	
+
   // var x = document.getElementById("animalSelect").selectedIndex;
   var animal = document.getElementById("animalSelect").value;
 
@@ -64,6 +64,7 @@ function shuffleArray(array) {
 return array;
 }
 
+localStorage.setItem(output);
 
     //  var result = Math.random();
     // if(result < 0.33)  {
