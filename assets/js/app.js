@@ -34,13 +34,16 @@ form.addEventListener("submit", function(event){
   output.textContent = username;
 
   // nothing in localstorage
-  
-  if(!localStorage.getItem("username")) {
+
+  if(!localStorage.getItem('username')) {
     localStorage.setItem('username', username);
   } else {
     localStorage.setItem('username', username);
   }
 });
+var LStorage = localStorage.getItem('username');
+var previous = document.querySelector('.output');
+previous.textContent = LStorage;
 
 /**
  * Takes an array and returns a shuffled array
@@ -63,6 +66,12 @@ function local()	{
 	submit();
 
 }
-
+//find all local storage
+function allStorage() {
+    var archive = [];
+    for (var i = 0; i<localStorage.length; i++) {
+        archive[i] = localStorage.getItem(localStorage.key(i));
+    }
+}
 // var test = 1
 // localStorage.setItem(Math.random(), test);
