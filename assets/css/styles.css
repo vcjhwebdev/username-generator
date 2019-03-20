@@ -76,6 +76,7 @@ Device width:
 		box-sizing: border-box;
 	}
 
+
 ----------------------------------------------------------------------------------
 	body  {
 		height: 100vh;
@@ -98,7 +99,7 @@ Device width:
 	form button {
 		margin: 16px auto;
 	}
-	
+
 	}
 	label {
 		display: block;
