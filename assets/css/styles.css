@@ -44,20 +44,33 @@ select{
   padding: 10px;
   border-width: 6px;
   box-shadow: 2px 25px 10px 0px rgba(0,0,0,0.5);
+	font-family: monospace;
 }
 label {
   display: block;
   font-size: 70px;
-  font-family: 'sans-serif';
+  font-family: inherit;
   color: #F12312;
 }
-
+.previous {
+	width: 350px;
+	height: 80px;
+	margin: auto;
+	padding: 10px;
+	border-width: 6px;
+	border-color: #FF2724;
+	border-style: groove;
+	border-width: thick;
+	box-shadow: 2px 25px 10px 0px rgba(0,0,0,0.5);
+	font-size: 25px;
+}
 
  .container{
    background-color:#FFFFFF;
    padding:10px;
    border-radius:15px;
    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	 border
  }
 
 
