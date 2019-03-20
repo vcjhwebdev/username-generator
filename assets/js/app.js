@@ -32,6 +32,14 @@ form.addEventListener("submit", function(event){
   var username = shuffled.join('');
 
   output.textContent = username;
+
+  // nothing in localstorage
+  
+  if(!localStorage.getItem("username")) {
+    localStorage.setItem('username', username);
+  } else {
+    localStorage.setItem('username', username);
+  }
 });
 
 /**
@@ -55,4 +63,6 @@ function local()	{
 	submit();
 
 }
-  localStorage.setItem(Math.random(), output);
+
+// var test = 1
+// localStorage.setItem(Math.random(), test);
