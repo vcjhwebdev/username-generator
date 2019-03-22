@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Username Generator</title>
   </head>
   <body>
 
     <form id="usernameForm">
+      <fieldset>
       <label>Animals</label>
       <select id="animalSelect">
         <option value="cat">cat</option>
@@ -18,13 +20,23 @@
         <option value="lion">lion</option>
         <option value="shrek">shrek</option>
         <option value="donkey">donkey</option>
-        <option value="blue whale">blue whale</option>
-        <option value="killer whale">killer whale</option>
+        <option value="bluewhale">blue whale</option>
+        <option value="killerwhale">killer whale</option>
         <option value="lizard">lizard</option>
         <option value="gecko">gecko</option>
         <option value="lepoard">leapord</option>
         <option value="cheetah">cheetah</option>
+        <option value="monitar">moniter</option>
+        <option value="chungus">chungus</option>
+        <option value="mobomba">mo bomba</option>
+        <option value="blackmamba">black mamba</option>
+        <option value="stingray">stingray</option>
+        <option value="pufferfish">pufferfish</option>
+
       </select>
+    </fieldset>
+
+    <fieldset>
       <label>Hobbies</label>
       <select id="hobbySelect">
         <option value="soccer">soccer</option>
@@ -33,14 +45,23 @@
         <option value="waterpolo">waterpolo</option>
         <option value="tennis">tennis</option>
         <option value="baseball">baseball</option>
-        <option value="swimmming">swimming</option>
+        <option value="swimmer">swim</option>
         <option value="dancing">dancing</option>
         <option value="track">track</option>
         <option value="wrestling">wrestling</option>
         <option value="gamer">video games</option>
         <option value="cooking">cooking</option>
         <option value="volleyball">volleyball</option>
+        <option value="sleeping">sleeping</option>
+        <option value="singing">singing</option>
+        <option value="lifter">lifting</option>
+        <option value="shakeweighter">shake weighting</option>
+        <option value="shreking">shreking</option>
+
       </select>
+    </fieldset>
+
+    <fieldset>
       <label>Numbers</label>
       <select id="numberSelect">
         <option value="0">0</option>
@@ -53,16 +74,38 @@
         <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="∞">∞</option>
       </select>
-      <br>
-      <br>
-      <br>
-      <button type="submit" class="btn-generate">Generate</button>
+    </fieldset>
+
+    <fieldset class="generate">
+      <button type="local" class="btn-generate">Generate</button>
+    </fieldset>
+
+
+
+
     </form>
 
+    <div class="rainbow">
 <p class="output"></p>
+</div>
+
+
 
     <!-- JavaScript File (loaded after the html has rendered) -->
     <script src="assets/js/app.js"></script>
+
   </body>
 </html>

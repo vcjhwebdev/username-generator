@@ -1,3 +1,6 @@
+
+
+//Generating username by getting the name
 var form = document.getElementById('usernameForm');
 
 form.addEventListener("submit", function(event){
@@ -23,33 +26,49 @@ form.addEventListener("submit", function(event){
   var shuffled = shuffleArray(words);
 
   var username = shuffled.join('');
+  var username = shuffled.join('');
+  var username = shuffled.join('');
 
   output.textContent = username;
+
+  if(!localStorage.getItem('username')) {
+    localStorage.setItem('username', username);
+  } else {
+    localStorage.getItem('username');
+  }
 });
+var LStorage = localStorage.getItem('username');
+var previous = document.querySelector('.output');
+previous.textContent = LStorage;
 
 /**
  * Takes an array and returns a shuffled array
  */
 function shuffleArray(array) {
+  var i = 0
+     , j = 0
+     , temp = null
 
+   for (i = array.length - 1; i > 0; i -= 1) {
+     j = Math.floor(Math.random() * (i + 1))
+     temp = array[i]
+     array[i] = array[j]
+     array[j] = temp
+   }
+return array;
+}
+
+function local()	{
+	output();
 
 }
 
-
-    //  var result = Math.random();
-    // if(result < 0.33)  {
-    //     result = ("Your username is" + animal + hobby + number);
-    // }
-    // else if (result > 0.33 && result < 0.66)  {
-    //   result = ("Your username is" + hobby + animal + number);
-    // }
-    // else if (result > 0.66) {
-    //   result = ("Your username is" + number + hobby + animal);
-    // }
-
-/*
-
-function myFunction() {
-  var x = document.getElementById("numberSelect").selectedIndex;
-  alert(document.getElementsByTagName("option")[x].value);
-} */
+//find all local storage
+function allStorage() {
+    var archive = [];
+    for (var i = 0; i<localStorage.length; i++) {
+        archive[i] = localStorage.getItem(localStorage.key(i));
+    }
+}
+// var test = 1
+// localStorage.setItem(Math.random(), test);

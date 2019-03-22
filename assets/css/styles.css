@@ -1,78 +1,281 @@
 /* CSS Document */
-
+ /* background-color: FFFFFF; */
+/* =================================
+DEFAULT STYLES (NO MEDIA QUERY)
+Device width:
+    320px -->   <-- 768px
+==================================== */
+* {
+	box-sizing: border-box;
+}
 body  {
-  background-color: #e5e7ea;
+  background-color: #00e1ff;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
-
-* {
-	box-sizing: border-box;
-}
-
+/* flexbox container */
 form{
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+	flex-wrap: wrap;
 }
-
+fieldset {
+	border: none;
+}
+fieldset.generate {
+	flex: 1 0 100%;
+	width: 100%;
+}
+fieldset.generate button {
+	margin: 20px auto;
+}
+/* flexbox children */
+form > * {
+}
 select{
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  outline-style: groove;
+  border-style: groove;
+  border-color: #000000;
   display: inline-block;
-  width: 20%
+  margin: auto;
+  padding: 10px;
+  border-width: 6px;
+  box-shadow: 2px 25px 10px 0px rgba(0,0,0,0.5);
+	font-family: monospace;
 }
-
 label {
   display: block;
-  font-size: 72px;
+  font-size: 70px;
+  font-family: inherit;
+  color: #F12312;
+}
+.output {
+	border-color: #FF2724;
+	border-style: groove;
+	border-width: thick;
+	width: 340px;
+	max-width: 380px;
+	height: 120px;
+	font-size: 40px;
+	margin: auto;
+	padding: 10px;
+	border-width: 6px;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+.previous {
+	width: 350px;
+	height: 80px;
+	margin: auto;
+	padding: 10px;
+	border-width: 6px;
+	border-color: #FF2724;
+	border-style: groove;
+	border-width: thick;
+	box-shadow: 2px 25px 10px 2px rgba(0,0,0,0.5);
+	font-size: 25px;
+}
+
+ .container{
+   background-color:#FFFFFF;
+   padding:10px;
+   border-radius:15px;
+   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	 border
+ }
+
+
+/* =================================
+Device width:
+    <-- 320px
+==================================== */
+@media (max-width: 320px) {
+}
+/* =================================
+Device width:
+    768px -->   <-- 1024px
+==================================== */
+@media (min-width: 768px) {
+	* {
+		box-sizing: border-box;
+	}
+
+
+----------------------------------------------------------------------------------
+	body  {
+		height: 100vh;
+		background-color: #00e1ff;
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+	}
+	/* flexbox container */
+	form{
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+	}
+	/* flexbox children */
+	fieldset {
+		flex: 1 0 30%;
+		font-size: 0px;
+	}
+	form button {
+		margin: 16px auto;
+	}
+
+	}
+	label {
+		display: block;
+		font-size: 70px;
+		font-family: 'Cardo';
+		color: #F12312;
+	}
+
+
+
+
+	 .container{
+		 background-color:#FFFFFF;
+		 padding:10px;
+		 border-radius:15px;
+		 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	 }
+}
+ ---------------------------------------------------------------
+body  {
+	height: 100vh;
+	background-color: #00e1ff;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+/* flexbox container */
+form{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+/* flexbox children */
+fieldset {
+	flex: 1 0 20%;
+}
+form button {
+	margin: 16px auto;
+}
+select{
+	font-size: 25px;
+	text-align: center;
+	border-style: groove;
+	border-color: #000000;
+	display: inline-block;
+	margin: auto;
+	padding: 10px;
+	border-width: 6px;
+	box-shadow: 2px 20px 15px 0px rgba(0,0,0,0.55);
+}
+label {
+	display: block;
+	font-size: 70px;
+	font-family: 'Cardo';
+	color: #F12312;
 
 }
 .btn-generate {
-  background-color:;
-  outline-color: #FF0000;
-  outline-width: thick;
-  outline-style: groove;
-  width: 25%;
-  height: 120%;
-  font-size: 40px;
-
+	border-color: #FF2724;
+	border-width: thick;
+	border-style: groove;
+	width: 300px ;
+	height: 120;
+	font-size: 40px;
+	margin: auto;
+	padding: 10px;
+	border-width: 8px;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
  }
-
  .output {
-   background-color:;
-   outline-color: #7A19B2;
-   outline-style: groove;
-   width: 30%;
-   height: 120px;
-   font-size: 40px;
-
-
-
+	 border-color: #FF2724;
+	 border-style: groove;
+	 border-width: thick;
+	 width: 493px ;
+	 height: 120px;
+	 font-size: 40px;
+	 margin: auto;
+	 padding: 10px;
+	 border-width: 6px;
+	 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
 
  }
 
- /* #animalSelect {
-   left:10%;
-   position: absolute;
-   width: 10%;
-   height: 15%;
-   top: 50%;
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+ .rainbow {
+
+		/* Font options */
+	 font-family: 'Cardo';
+	 text-shadow: 2px 2px 4px #000000;
+	 font-size:40px;
+
+		/* Chrome, Safari, Opera */
+	 -webkit-animation: rainbow 5s infinite;
+
+	 /* Internet Explorer */
+	 -ms-animation: rainbow 5s infinite;
+
+	 /* Standar Syntax */
+	 animation: rainbow 5s infinite;
  }
 
-#hobbySelect {
-  left: 40%
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  top: 50%;
-}
+ /* Chrome, Safari, Opera */
+ 3 @-webkit-keyframes rainbow{
+	 0%{color: orange;}
+	 10%{color: purple;}
+	20%{color: red;}
+	 30%{color: CadetBlue;}
+	40%{color: yellow;}
+	 50%{color: coral;}
+	60%{color: green;}
+	 70%{color: cyan;}
+	 80%{color: DeepPink;}
+	 90%{color: DodgerBlue;}
+	100%{color: orange;}
+ }
 
-#numberSelect {
-  right:10%;
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  top: 50%;
-} /*
+ /* Internet Explorer*/
+ @-ms-keyframes rainbow{
+		0%{color: orange;}
+	 10%{color: purple;}
+	20%{color: red;}
+	 30%{color: CadetBlue;}
+	40%{color: yellow;}
+	 50%{color: coral;}
+	60%{color: green;}
+	 70%{color: cyan;}
+	 80%{color: DeepPink;}
+	 90%{color: DodgerBlue;}
+	100%{color: orange;}
+ }
+
+ /* Standar Syntax */
+ @keyframes rainbow{
+		 0%{color: orange;}
+	 10%{color: purple;}
+	20%{color: red;}
+	 30%{color: CadetBlue;}
+	40%{color: yellow;}
+	 50%{color: coral;}
+	60%{color: green;}
+	 70%{color: cyan;}
+	 80%{color: DeepPink;}
+	 90%{color: DodgerBlue;}
+	100%{color: orange;}
+ }
+
+
+ .container{
+	 background-color:#FFFFFF;
+	 padding:10px;
+	 border-radius:15px;
+	 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+ }
