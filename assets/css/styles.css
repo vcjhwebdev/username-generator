@@ -52,6 +52,19 @@ label {
   font-family: inherit;
   color: #F12312;
 }
+.output {
+	border-color: #FF2724;
+	border-style: groove;
+	border-width: thick;
+	width: 340px;
+	max-width: 380px;
+	height: 120px;
+	font-size: 40px;
+	margin: auto;
+	padding: 10px;
+	border-width: 6px;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
 .previous {
 	width: 350px;
 	height: 80px;
@@ -61,7 +74,7 @@ label {
 	border-color: #FF2724;
 	border-style: groove;
 	border-width: thick;
-	box-shadow: 2px 25px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 25px 10px 2px rgba(0,0,0,0.5);
 	font-size: 25px;
 }
 
