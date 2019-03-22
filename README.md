@@ -15,10 +15,6 @@ this app will give you the ability to chose your username based off of what you 
 
 **Version 0.1**
 
--added 3 boxes
-
--added generate button
-
-**Version 0.2**
-
-- fixe readme
+- added 3 boxes
+- added generate button
+- fix readme
