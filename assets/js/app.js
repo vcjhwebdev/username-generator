@@ -33,12 +33,10 @@ form.addEventListener("submit", function(event){
 
   output.textContent = username;
 
-  // nothing in localstorage
-
   if(!localStorage.getItem('username')) {
     localStorage.setItem('username', username);
   } else {
-    localStorage.setItem('username', username);
+    localStorage.getItem('username');
   }
 });
 var LStorage = localStorage.getItem('username');
@@ -63,9 +61,10 @@ return array;
 }
 
 function local()	{
-	submit();
+	output();
 
 }
+
 //find all local storage
 function allStorage() {
     var archive = [];
