@@ -32,7 +32,7 @@ form.addEventListener("submit", function(event){
   var username = shuffled.join('');
 
   output.textContent = username;
-function theLocalstorage()  {
+function theLocalstorage(){
   if(localStorage.getItem('username') === null) {
     localStorage.getItem('username');
   } else {
@@ -40,8 +40,8 @@ function theLocalstorage()  {
     localStorage.setItem('username', username);
   }
 };
-
-
+document.getElementById("previous").innerHTML = localStorage.getItem('username');
+});
 
 var LStorage = localStorage.getItem('username');
 var previous = document.querySelector('.output');
