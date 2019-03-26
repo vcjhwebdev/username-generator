@@ -1,5 +1,5 @@
 username generator
-APP DESCRIPTION HERE
+
 this app will give you the ability to chose your username based off of what you enjoy doing!
 ## Authors
 
@@ -18,3 +18,8 @@ this app will give you the ability to chose your username based off of what you 
 - added 3 boxes
 - added generate button
 - fix readme
+
+**Version 0.2**
+
+- added another box
+- fixed the readme 
