@@ -5,8 +5,6 @@ var form = document.getElementById('usernameForm');
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
-
-
   // var x = document.getElementById("animalSelect").selectedIndex;
   var animal = document.getElementById("animalSelect").value;
 
