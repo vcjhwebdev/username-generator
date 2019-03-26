@@ -5,6 +5,8 @@ var form = document.getElementById('usernameForm');
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
+
+
   // var x = document.getElementById("animalSelect").selectedIndex;
   var animal = document.getElementById("animalSelect").value;
 
@@ -30,13 +32,17 @@ form.addEventListener("submit", function(event){
   var username = shuffled.join('');
 
   output.textContent = username;
-
-  if(!localStorage.getItem('username')) {
-    localStorage.setItem('username', username);
+function theLocalstorage()  {
+  if(localStorage.getItem('username') === null) {
+    localStorage.getItem('username');
   } else {
     localStorage.getItem('username');
+    localStorage.setItem('username', username);
   }
-});
+};
+
+
+
 var LStorage = localStorage.getItem('username');
 var previous = document.querySelector('.output');
 previous.textContent = LStorage;
@@ -60,6 +66,7 @@ return array;
 
 function local()	{
 	output();
+  theLocalstorage();
 
 }
 
@@ -70,5 +77,17 @@ function allStorage() {
         archive[i] = localStorage.getItem(localStorage.key(i));
     }
 }
-// var test = 1
-// localStorage.setItem(Math.random(), test);
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
