@@ -3,7 +3,7 @@ const CACHE_NAME = 'v1.0';
 var urlsToCache = [
 	'index.html',
 	'assets/css/style.css',
-	'assets/js/calculator.js'
+	'assets/js/username-generator.js'
 ];
 
 self.addEventListener('install', function(event) {
