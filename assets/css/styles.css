@@ -9,7 +9,8 @@ Device width:
 	box-sizing: border-box;
 }
 body  {
-  background-color: #00e1ff;
+	background: rgb(74,11,140);
+	background: linear-gradient(90deg, rgba(74,11,140,1) 31%, rgba(35,174,236,1) 82%);
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -57,7 +58,7 @@ label {
 	border-style: groove;
 	border-width: thick;
 	width: 340px;
-	max-width: 380px;
+	max-width: 320px;
 	height: 120px;
 	font-size: 40px;
 	margin: auto;
@@ -103,10 +104,11 @@ Device width:
 	}
 
 
-----------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------- */
 	body  {
 		height: 100vh;
-		background-color: #00e1ff;
+		background: rgb(74,11,140);
+		background: linear-gradient(90deg, rgba(74,11,140,1) 31%, rgba(35,174,236,1) 82%);
 		-webkit-user-select: none;
 		-webkit-tap-highlight-color: transparent;
 		-webkit-touch-callout: none;
@@ -133,10 +135,6 @@ Device width:
 		font-family: 'Cardo';
 		color: #F12312;
 	}
-
-
-
-
 	 .container{
 		 background-color:#FFFFFF;
 		 padding:10px;
@@ -144,10 +142,11 @@ Device width:
 		 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
 	 }
 }
- ---------------------------------------------------------------
+ /*---------------------------------------------------------------*/
 body  {
 	height: 100vh;
-	background-color: #00e1ff;
+	background: rgb(74,11,140);
+	background: linear-gradient(90deg, rgba(74,11,140,1) 31%, rgba(35,174,236,1) 82%);
 	-webkit-user-select: none;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
