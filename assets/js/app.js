@@ -1,6 +1,4 @@
 
-
-//Generating username by getting the name
 var form = document.getElementById('usernameForm');
 
 form.addEventListener("submit", function(event){
@@ -11,7 +9,7 @@ form.addEventListener("submit", function(event){
   var animal = document.getElementById("animalSelect").value;
   var hobby = document.getElementById("hobbySelect").value;
   var number = document.getElementById("numberSelect").value;
-  var videogames = document.getElementById("gameSelect").value;
+  var games = document.getElementById("gameSelect").value;
 
 
   var output = document.querySelector('.output');
