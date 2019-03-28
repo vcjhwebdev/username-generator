@@ -32,20 +32,17 @@ form.addEventListener("submit", function(event){
   var username = shuffled.join('');
 
   output.textContent = username;
-function theLocalstorage(){
-  if(localStorage.getItem('username') === null) {
-    localStorage.getItem('username');
+
+  if(!localStorage.getItem('username')) {
+    localStorage.setItem('username', username);
   } else {
     localStorage.getItem('username');
     localStorage.setItem('username', username);
   }
-};
-document.getElementById("previous").innerHTML = localStorage.getItem('username');
 });
-
-var LStorage = localStorage.getItem('username');
-var previous = document.querySelector('.output');
-previous.textContent = LStorage;
+var previous = localStorage.getItem('username')
+var user = localStorage.getItem('username')
+previous.textContent = user;
 
 /**
  * Takes an array and returns a shuffled array
@@ -63,11 +60,12 @@ function shuffleArray(array) {
    }
 return array;
 }
-
+function previoust() {
+  document.getElementById("prev")
+}
 function local()	{
 	output();
-  theLocalstorage();
-
+  previoust();
 }
 
 //find all local storage
@@ -77,3 +75,5 @@ function allStorage() {
         archive[i] = localStorage.getItem(localStorage.key(i));
     }
 }
+// var test = 1
+// localStorage.setItem(Math.random(), test);
