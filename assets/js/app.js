@@ -7,16 +7,12 @@ form.addEventListener("submit", function(event){
   event.preventDefault();
 
 
-  // var x = document.getElementById("animalSelect").selectedIndex;
+
   var animal = document.getElementById("animalSelect").value;
-
-  // var y = document.getElementById("hobbySelect").selectedIndex;
   var hobby = document.getElementById("hobbySelect").value;
-
-  // var z = document.getElementById("numberSelect").selectedIndex;
   var number = document.getElementById("numberSelect").value;
+  var videogames = document.getElementById("gameSelect").value;
 
-  //console.log(animal,hobby,number);
 
   var output = document.querySelector('.output');
 
@@ -24,13 +20,13 @@ form.addEventListener("submit", function(event){
   words.push(animal);
   words.push(hobby);
   words.push(number);
-
+  words.push(games);
   var shuffled = shuffleArray(words);
 
   var username = shuffled.join('');
   var username = shuffled.join('');
   var username = shuffled.join('');
-
+  var username = shuffled.join('');
   output.textContent = username;
 
   if(!localStorage.getItem('username')) {
