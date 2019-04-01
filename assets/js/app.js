@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event){
   var animal = document.getElementById("animalSelect").value;
   var hobby = document.getElementById("hobbySelect").value;
   var number = document.getElementById("numberSelect").value;
-  var games = document.getElementById("gameSelect").value;
+  var symbol = document.getElementById("symbolSelect").value;
 
 
   var output = document.querySelector('.output');
@@ -18,7 +18,7 @@ form.addEventListener("submit", function(event){
   words.push(animal);
   words.push(hobby);
   words.push(number);
-  words.push(games);
+  words.push(symbol);
   var shuffled = shuffleArray(words);
 
   var username = shuffled.join('');
