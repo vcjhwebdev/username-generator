@@ -63,11 +63,6 @@ function local()	{
 }
 
 //find all local storage
-function allStorage() {
-    var archive = [];
-    for (var i = 0; i<localStorage.length; i++) {
-        archive[i] = localStorage.getItem(localStorage.key(i));
-    }
-}
+
 // var test = 1
 // localStorage.setItem(Math.random(), test);
