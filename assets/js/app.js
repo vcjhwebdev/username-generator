@@ -22,9 +22,7 @@ form.addEventListener("submit", function(event){
   var shuffled = shuffleArray(words);
 
   var username = shuffled.join('');
-  var username = shuffled.join('');
-  var username = shuffled.join('');
-  var username = shuffled.join('');
+
   output.textContent = username;
 
   if(!localStorage.getItem('username')) {
@@ -59,7 +57,6 @@ function previoust() {
 }
 function local()	{
 	output();
-  previoust();
 }
 
 //find all local storage
