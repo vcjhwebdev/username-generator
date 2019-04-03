@@ -69,6 +69,9 @@ function generateAllPossibleNames(array) {
 
   // }
 
+var arrayOfNames[];
+
+while()
 
 
   return shuffleArray(array);
@@ -80,7 +83,7 @@ function local()	{
 	output();
   previoust();
 }
-
+typeText('Username Generator', bannerTitle);
 //find all local storage
 
 // var test = 1
