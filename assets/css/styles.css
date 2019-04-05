@@ -59,7 +59,7 @@ label {
 	border-color: #FF2724;
 	border-style: groove;
 	border-width: thick;
-	width: 100%;
+	width: 305px;
 	height: 120px;
 	font-size: 40px;
 	margin: auto;
@@ -297,7 +297,7 @@ label {
  	border: 3px dashed #CCCCCC;
  	background: #FFFFFF;
  	padding: 20px;
- 	cursor: url(./blank.cur), none;
+ 	cursor src=("../../images/mouse-cursour"), none;
 }
 #mycursor {
  	cursor: none;
@@ -310,3 +310,18 @@ label {
  	left: 0;
  	z-index: 10000;
 }
+body
+  height: 100%
+  p
+    color: bisque
+    width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-100%)
+    text-align: center
+    font:
+      family: opens sans, helvetica
+      size: 50px
+      weight: 600
+  
