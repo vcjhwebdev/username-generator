@@ -150,13 +150,21 @@
 </div>
 
   <div id="help">
-    <p><i><b>Keep clicking to get different results!</b></i><p>
+    <p><i><b><marquee behavior="scroll" direction="left" scrollamount="10" loop="3">Keep clicking to get different results!</marquee></b></i><p>
   </div>
 <br>
   <br>
     <br>
       <br>
-<marquee behavior="scroll" direction="left" scrollamount="25" loop="3">Authors: Billy Roeschlein, Michael Armeniakos, and Jake Garlick</marquee>
+      <button onclick="authors()">Authors!</button>
+<script>
+function authors()  {
+  localStorage.setItem("Billy", "Is sexy");
+}
+
+</script>
+</script>
+
 
     <!-- JavaScript File (loaded after the html has rendered) -->
     <script src="assets/js/app.js"></script>
@@ -172,6 +180,8 @@
       	});
       });
     }
+    body
+      p.typeIt
 
   </body>
 </html>
