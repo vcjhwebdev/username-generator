@@ -28,12 +28,7 @@ form.addEventListener("submit", function(event){
 
   output.textContent = symbol + username + symbol;
 
-   if(!localStorage.getItem('username')) {
-    localStorage.setItem('username', username);
-  } else {
-    localStorage.getItem('username');
- localStorage.setItem('username', username);
-}
+  
 });
 
  var previous = localStorage.getItem('username')
