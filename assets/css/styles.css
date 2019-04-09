@@ -6,7 +6,6 @@ Device width:
     320px --> @media (max-width: 320px) {
 		}  <-- 768px
 ==================================== */
-
 * {
 	box-sizing: border-box;
 }
@@ -79,7 +78,6 @@ label {
 	box-shadow: 2px 25px 10px 2px rgba(0,0,0,0.5);
 	font-size: 25px;
 }
-
  .container{
    background-color:#FFFFFF;
    padding:10px;
@@ -87,8 +85,6 @@ label {
    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
 	 border
  }
-
-
 /* =================================
 Device width:
     <-- 320px
@@ -102,9 +98,6 @@ Device width:
 @media (min-width: 768px) {
 	* {
 		box-sizing: border-box;
-
-
-
 /* ---------------------------------------------------------------------------------- */
 	body  {
 		height: 100vh;
@@ -128,7 +121,6 @@ Device width:
 	form button {
 		margin: 16px auto;
 	}
-
 	}
 	label {
 		display: block;
@@ -142,8 +134,8 @@ Device width:
 		 border-radius:15px;
 		 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
 	 }
+	}
 }
-
  /*---------------------------------------------------------------*/
 body  {
 	height: 100vh;
@@ -183,7 +175,6 @@ label {
 	font-size: 70px;
 	font-family: 'Cardo';
 	color: #F12312;
-
 }
 .btn-generate {
 	border-color: #FF2724;
@@ -197,7 +188,6 @@ label {
 	border-width: 8px;
 	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
   outline: none;
-
  }
  .output {
 	 border-color: #FF2724;
@@ -211,7 +201,6 @@ label {
 	 padding: 10px;
 	 border-width: 6px;
 	 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-
  }
  .help {
 	 text-align: center;
@@ -222,26 +211,19 @@ label {
 	 right: auto;
 	 color: red;
  }
-
-
 @import url('https://fonts.googleapis.com/css?family=Cardo');
  .rainbow {
-
 		/* Font options */
 	 font-family: 'Cardo';
 	 text-shadow: 2px 2px 4px #000000;
 	 font-size:40px;
-
 		/* Chrome, Safari, Opera */
 	 -webkit-animation: rainbow 5s infinite;
-
 	 /* Internet Explorer */
 	 -ms-animation: rainbow 5s infinite;
-
 	 /* Standar Syntax */
 	 animation: rainbow 5s infinite;
  }
-
  /* Chrome, Safari, Opera */
  3 @-webkit-keyframes rainbow{
 	 0%{color: orange;}
@@ -256,7 +238,6 @@ label {
 	 90%{color: DodgerBlue;}
 	100%{color: orange;}
  }
-
  /* Internet Explorer*/
  @-ms-keyframes rainbow{
 		0%{color: orange;}
@@ -271,7 +252,6 @@ label {
 	 90%{color: DodgerBlue;}
 	100%{color: orange;}
  }
-
  /* Standar Syntax */
  @keyframes rainbow{
 		 0%{color: orange;}
@@ -292,36 +272,3 @@ label {
 	 border-radius:15px;
 	 box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
  }
- #test-area {
- 	height: 200px;
- 	border: 3px dashed #CCCCCC;
- 	background: #FFFFFF;
- 	padding: 20px;
- 	cursor src=("../../images/mouse-cursour"), none;
-}
-#mycursor {
- 	cursor: none;
- 	width: 97px;
- 	height: 137px;
- 	background: url("images/custom-cursor.jpg") no-repeat left top;
- 	position: absolute;
- 	display: none;
- 	top: 0;
- 	left: 0;
- 	z-index: 10000;
-}
-body
-  height: 100%
-  p
-    color: bisque
-    width: 100%
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-100%)
-    text-align: center
-    font:
-      family: opens sans, helvetica
-      size: 50px
-      weight: 600
-  
