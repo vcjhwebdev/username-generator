@@ -21,5 +21,6 @@ this app will give you the ability to chose your username based off of what you 
 
 **Version 0.2**
 
-- added another box
-- fixed the readme 
+- added websites
+- changed background
+- added symbols

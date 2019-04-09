@@ -211,6 +211,10 @@ label {
 	 right: auto;
 	 color: red;
  }
+ .btn-aut{
+	 border-color: #13F51E;
+	 width: 70px;
+ }
 @import url('https://fonts.googleapis.com/css?family=Cardo');
  .rainbow {
 		/* Font options */
