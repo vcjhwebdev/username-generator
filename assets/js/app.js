@@ -1,5 +1,6 @@
 
 var form = document.getElementById('usernameForm');
+var output = document.querySelector('.output');
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
@@ -10,9 +11,6 @@ form.addEventListener("submit", function(event){
   var hobby = document.getElementById("hobbySelect").value;
   var number = document.getElementById("numberSelect").value;
   var symbol = document.getElementById("symbolSelect").value;
-
-
-  var output = document.querySelector('.output');
 
   var words = [];
   words.push(animal);
@@ -27,13 +25,13 @@ form.addEventListener("submit", function(event){
   var username = shuffled.join('');
 
   output.textContent = symbol + username + symbol;
+  localStorage.setItem('username', symbol + username + symbol);
 
-  
+
 });
 
- var previous = localStorage.getItem('username')
- var user = localStorage.getItem('username')
- previous.textContent = user;
+ var previous = localStorage.getItem('username');
+ output.textContent = previous;
 
 /**
  * Takes an array and returns a shuffled array
